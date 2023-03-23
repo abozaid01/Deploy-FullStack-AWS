@@ -57,11 +57,6 @@ jobs:
             - run:
                   name: Build Server
                   command: yarn server:build
-        filters:
-            branches:
-                only:
-                    - main
-                    - master
     test:
         docker:
             - image: "cimg/base:stable"
@@ -77,11 +72,6 @@ jobs:
             - run:
                   name: Test Server
                   command: yarn server:test
-        filters:
-            branches:
-                only:
-                    - main
-                    - master
     deploy:
         docker:
             - image: "cimg/base:stable"
