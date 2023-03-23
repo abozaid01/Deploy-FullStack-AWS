@@ -53,10 +53,10 @@ jobs:
             - install_server
             - run:
                   name: Build Client
-                  command: npm run client:build
+                  command: yarn client:build
             - run:
                   name: Build Server
-                  command: npm run server:build
+                  command: yarn server:build
     test:
         docker:
             - image: "cimg/base:stable"
@@ -68,10 +68,10 @@ jobs:
             - install_server
             - run:
                   name: Test Client
-                  command: npm run client:test
+                  command: yarn client:test
             - run:
                   name: Test Server
-                  command: npm run server:test
+                  command: yarn server:test
     deploy:
         docker:
             - image: "cimg/base:stable"
@@ -85,10 +85,10 @@ jobs:
             - install_server
             - run:
                   name: Deploy Client
-                  command: npm run client:deploy
+                  command: yarn client:deploy
             - run:
                   name: Deploy Server
-                  command: npm run server:deploy
+                  command: yarn server:deploy
 
 workflows:
     build_test_deploy:
