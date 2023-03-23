@@ -25,7 +25,7 @@ function App() {
                 <ul>
                     {notes.map((note) => (
                         <li key={note.id}>
-                            <h3>🧵 {note.title}</h3>
+                            <h3>✅ {note.title}</h3>
                             <p>{note.content}</p>
                         </li>
                     ))}
