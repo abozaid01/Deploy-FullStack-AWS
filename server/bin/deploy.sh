@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "*******__ Fullstack Server API  __*******"
 
-echo "*******__ 1.Create a repository with the eb init command.....👨🏻‍💻🤌🏻  __*******"
-eb init aws-circle-ci-api --platform node.js --region us-east-1
+# echo "*******__ 1.Create a repository with the eb init command.....👨🏻‍💻🤌🏻  __*******"
+# eb init aws-circle-ci-api --platform node.js --region us-east-1
 
 echo "*******__ 2.Sets the specified environment....👨🏻‍💻🤌🏻  __*******"
 eb use aws-circle-ci-api-dev
