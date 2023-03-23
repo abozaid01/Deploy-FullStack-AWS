@@ -89,11 +89,6 @@ jobs:
             - run:
                   name: Deploy Server
                   command: yarn server:deploy
-        filters:
-            branches:
-                only:
-                    - main
-                    - master
 
 workflows:
     build_test_deploy:
